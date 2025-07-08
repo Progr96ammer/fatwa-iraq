@@ -22,7 +22,7 @@
                         <label for="image" class="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300">الصورة</label>
                         <input type="file" id="image" name="image" class="form-input w-full dark:bg-gray-900 dark:text-white">
                         @if ($news->image)
-                            <img src="{{ asset('storage/' . $news->image) }}" alt="صورة الخبر" class="mt-2 rounded shadow-sm" style="max-height: 150px;">
+                            <img src="{{ asset('storage/app/public/' . $news->image) }}" alt="صورة الخبر" class="mt-2 rounded shadow-sm" style="max-height: 150px;">
                         @endif
                     </div>
 

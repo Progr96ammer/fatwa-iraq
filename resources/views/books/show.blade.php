@@ -7,7 +7,7 @@
                     {{-- غلاف الكتاب --}}
                     @if($book->cover)
                         <div class="flex justify-center mb-6">
-                            <img src="{{ asset('storage/' . $book->cover) }}"
+                            <img src="{{ asset('storage/app/public/' . $book->cover) }}"
                                  alt="غلاف الكتاب"
                                  class="w-60 h-auto rounded-lg shadow-lg">
                         </div>
@@ -31,7 +31,7 @@
 
                     {{-- زر التحميل --}}
                     @if($book->file)
-                        <a href="{{ asset('storage/' . $book->file) }}"
+                        <a href="{{ asset('storage/app/public/' . $book->file) }}"
                            class="inline-flex items-center px-5 py-2.5 bg-green-600 text-white font-semibold text-sm rounded-md shadow hover:bg-green-700 transition"
                            download>
                             <i class="fas fa-download me-2"></i> تحميل الكتاب

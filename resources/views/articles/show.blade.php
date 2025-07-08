@@ -25,7 +25,7 @@
                     {{-- صورة المقال إن وجدت --}}
                     @if($article->image)
                         <div class="mt-6">
-                            <img src="{{ asset('storage/' . $article->image) }}"
+                            <img src="{{ asset('storage/app/public/' . $article->image) }}"
                                  alt="صورة المقال"
                                  class="w-full max-h-96 object-cover rounded-md border border-gray-300 dark:border-gray-600">
                         </div>

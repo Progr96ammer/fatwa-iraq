@@ -31,7 +31,7 @@
                                     onclick="window.location='{{ route('books.show', $book) }}'">
                                     <td class="px-4 py-3">
                                         @if($book->cover)
-                                            <img src="{{ asset('storage/' . $book->cover) }}" alt="غلاف"
+                                            <img src="{{ asset('storage/app/public/' . $book->cover) }}" alt="غلاف"
                                                 class="w-full h-auto max-h-48 object-contain rounded-md shadow-sm border border-gray-300 dark:border-gray-600">
                                         @else
                                             <span class="text-gray-400">لا يوجد</span>

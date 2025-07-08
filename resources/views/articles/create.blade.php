@@ -49,7 +49,7 @@
 
                         @if(isset($article) && $article->image)
                             <div class="mt-4">
-                                <img src="{{ asset('storage/' . $article->image) }}" class="w-32 rounded shadow">
+                                <img src="{{ asset('storage/app/public/' . $article->image) }}" class="w-32 rounded shadow">
                             </div>
                         @endif
                     </div>

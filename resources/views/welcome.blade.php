@@ -127,7 +127,7 @@
                             <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">                                
                                 <a href="{{ route('books.show', $book->id) }}"
                                    class="block bg-white dark:bg-gray-700 rounded shadow-md hover:shadow-lg transition overflow-hidden">
-                                   <img src="{{ asset('storage/' . $book->cover) }}"
+                                   <img src="{{ asset('storage/app/public/' . $book->cover) }}"
                                       alt="{{ $book->title }}"
                                       class="w-full h-48 object-cover rounded-t">
                                    <div class="p-4">
@@ -170,7 +170,7 @@
                             <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
                                 <a href="{{ route('news.show', $news->id) }}"
                                    class="block bg-white dark:bg-gray-700 rounded shadow-md hover:shadow-lg transition overflow-hidden">
-                                   <img src="{{ asset('storage/' . $news->image) }}"
+                                   <img src="{{ asset('storage/app/public/' . $news->image) }}"
                                       alt="{{ $news->title }}"
                                       class="w-full h-48 object-cover rounded-t">
                                    <div class="p-4">
@@ -213,7 +213,7 @@
                             <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
                                 <a href="{{ route('articles.show', $article->id) }}"
                                 class="block bg-white dark:bg-gray-700 rounded shadow-md hover:shadow-lg transition overflow-hidden">
-                                <img src="{{ asset('storage/' . $article->image) }}"
+                                <img src="{{ asset('storage/app/public/' . $article->image) }}"
                                     alt="{{ $article->title }}"
                                     class="w-full h-48 object-cover rounded-t">
                                 <div class="p-4">

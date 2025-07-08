@@ -33,7 +33,7 @@
                                 class="w-full text-gray-900 dark:text-white bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-md file:bg-blue-600 file:text-white file:font-medium file:px-4 file:py-2 file:rounded file:border-0 hover:file:bg-blue-700">
 
                             @if($book->cover)
-                                <img src="{{ asset('storage/' . $book->cover) }}" alt="غلاف سابق"
+                                <img src="{{ asset('storage/app/public/' . $book->cover) }}" alt="غلاف سابق"
                                     class="mt-4 rounded shadow max-w-xs">
                             @endif
                         </div>
@@ -44,7 +44,7 @@
                             <input type="file" id="file" name="file" accept="application/pdf"
                                 class="w-full text-gray-900 dark:text-white bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-md file:bg-green-600 file:text-white file:font-medium file:px-4 file:py-2 file:rounded file:border-0 hover:file:bg-green-700">
 
-                            <a href="{{ asset('storage/' . $book->file) }}" target="_blank"
+                            <a href="{{ asset('storage/app/public/' . $book->file) }}" target="_blank"
                                 class="inline-flex items-center mt-3 text-sm text-blue-600 dark:text-blue-400 hover:underline">
                                 <i class="fas fa-file-pdf me-2"></i> عرض الملف الحالي
                             </a>

@@ -23,7 +23,7 @@
                             <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-2">{{ $item->title }}</h3>
 
                             @if($item->image)
-                                <img src="{{ asset('storage/' . $item->image) }}" alt="صورة الخبر"
+                                <img src="{{ asset('storage/app/public/' . $item->image) }}" alt="صورة الخبر"
                                      class="rounded mb-3 max-h-48 w-full object-cover">
                             @endif
 
