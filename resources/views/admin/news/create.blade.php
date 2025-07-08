@@ -3,6 +3,7 @@
         <div class="max-w-4xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
                 <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-6">إضافة خبر جديد</h2>
+
                 <form method="POST" action="{{ route('news.store') }}" enctype="multipart/form-data" class="space-y-6">
                     @csrf
 
