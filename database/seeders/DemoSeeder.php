@@ -36,14 +36,14 @@ class DemoSeeder extends Seeder
             'email' => 'sheikh@fatwa.com',
             'password' => bcrypt('password'),
         ]);
-        $sheikh->assignRole('admin');
+        $sheikh->assignRole('sheikh');
 
         $user = User::create([
             'name' => 'مستخدم عادي',
             'email' => 'user@fatwa.com',
             'password' => bcrypt('password'),
         ]);
-        $user->assignRole('admin');
+        $user->assignRole('user');
 
         // مستخدمين إضافيين
         User::factory(10)->create();
